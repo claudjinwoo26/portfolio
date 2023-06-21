@@ -1,0 +1,105 @@
+ .bio-header {
+     color: #001C2F;
+     font-family: 'Courier New', sans-serif;
+     font-weight: bold;
+     font-size: 60px;
+     margin-top: 5%;
+     margin-top: 100px;
+     margin-left: 100px;
+     opacity: 0;
+     transform: translateY(-50px);
+     animation: slideInTop 0.5s ease forwards;
+ }
+
+ @keyframes slideInTop {
+     0% {
+         opacity: 0;
+         transform: translateY(-50px);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+ p {
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 20px;
+    margin: 50px;
+  }
+  .section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .school-name {
+    font-weight: bold;
+  }
+  .year {
+    font-style: italic;
+  }
+  .achievement {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+.h2-container{
+    margin: 20px;
+    font-family: "Courier New", monospace;
+    color: black;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #0078FE;
+    opacity: 2;
+    border-radius: 10px;
+    border-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: -60px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.skill-box:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.skill-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.php-logo,
+.html-logo,
+.css-logo,
+.js-logo,
+.laravel-logo {
+    height: 100px;
+    widows: 100px;
+}
+
+.skill-btn {
+    height: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    display:none;
+}
+.skill-box:hover .skill-btn{
+    display:block
+}

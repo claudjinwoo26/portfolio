@@ -1,0 +1,74 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    /* Adjust the background color as needed */
+    z-index: 999;
+    /* Set a high z-index to ensure it appears above other elements */
+    /* Add any other styles you want for the navbar */
+}
+
+.active {
+    background-color: #3B82F6;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+a,
+ul {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+li:hover a {
+    background-color: #3B82F6;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.name-header {
+    color: #BCC7DC;
+    text-align: center;
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 15px;
+    /* Remove the italic style */
+}
+
+.name-header:hover a {
+    color: black;
+    opacity: 1;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-bottom: 10px;
+    padding: 10px;
+    /* Add margin-bottom to create space between li items */
+}
+
+.bes:hover {
+    background-color: #3B82F6;
+    cursor: pointer;
+}

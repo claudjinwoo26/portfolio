@@ -1,0 +1,119 @@
+/* padding: top-value right-value bottom-value left-value; */
+.aboutpage {
+    margin: 20px;
+    /* Adds margin spacing around the whole webpage */
+    padding: 20px;
+    /* Adds padding spacing inside the whole webpage */
+}
+
+.des-container {
+    padding: 20px 40px 50px 40px;
+    margin: 10px 30px 0 30px;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+}
+
+.about-header {
+    color: black;
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    font-style: normal;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideInTop 0.5s ease forwards;
+}
+
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-header1 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    opacity: 0;
+    transform: translateX(-50px);
+    /* Change translateY to translateX */
+    animation: slideInLeft 0.5s ease forwards;
+    /* Change slideInTop to slideInLeft */
+    animation-delay: 0.5s;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+        /* Change translateY to translateX */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* Change translateY to translateX */
+    }
+}
+
+.boxes-container {
+    display: flex;
+    gap: 50px;
+    /* Adjust the gap value as needed */
+}
+
+.biography-box,
+.education-box,
+.skill-box {
+    font-family: Monaco, Consolas, "Courier New", monospace;
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    margin-left: 250px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    display: flex;
+    flex-direction:column;
+     color:white
+}
+
+.biography-box:hover,
+.education-box:hover,
+.skill-box:hover {
+    cursor: pointer;
+    background-color: #0558EE;
+    color: #ccc;
+}
+
+.hidden-biography,
+.hidden-education,
+.hidden-skill {
+    transition: 1s;
+    display: none;
+}
+
+.about-logo {
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,130 @@
+.homepage{
+    margin: 5px; /* Adds margin spacing around the whole webpage */
+    padding: 5px; /* Adds padding spacing inside the whole webpage */
+}
+.claud-image {
+    position: absolute;
+    left: 1050px;
+    top: 23%;
+    width: 370px;
+    height: 550px;
+}
+
+.explore-button {
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #F6FAFB;
+    position: absolute;
+    bottom: 150px;
+    right: 45%;
+    border-radius: 15px;
+    border-color: #262A2E;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.explore-button:hover {
+    color: #0558EE;
+    background-color: white;
+}
+
+.header1 {
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    margin:0;
+    margin-top: 100px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideInTop 0.5s ease forwards;
+}
+
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header2 {
+    color:white;
+    font-family:'Courier New', sans-serif;
+    margin-top: 10px;
+    padding-top: 10px;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 0.5s ease forwards;
+    animation-delay: 0.5s;
+    /* Add delay of 0.5s before animation starts */
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* button css for animation */
+.explore-button {
+    height: 100px;
+    width: 210px;
+    font-size: 40px;
+    background-color: transparent;
+    border-color: transparent;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 0.5s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.claud-image {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideInTop 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.arrow-icon{
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
