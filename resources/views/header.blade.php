@@ -20,7 +20,7 @@
     <header style="font-family:'Courier New', sans-serif; font-style:italic ">
         <nav class="nav-bar bg-light bg-gradient">
             <h1 class="name-header"><a href="{{ route('homepage') }}">
-                    <img src="/images/claudlogo.PNG" alt="Header Image" style="width:50px; height:50px">
+                    <img src="{{ asset('images/claudlogo.png') }}" alt="Header Image" style="width:50px; height:50px">
                     Jose Claudio Bereber</a>
             </h1>
             <ul style="display:flex; flex-direction:row; gap:50px; justify-content:center; font-weight:bold;"
